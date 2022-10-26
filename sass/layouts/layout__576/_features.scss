@@ -1,0 +1,19 @@
+.features {
+    .container {
+    }
+    .title {
+        margin-bottom: 50px;
+    }
+    &__list {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+        justify-content: space-around;
+        margin-bottom: 70px;
+    }
+    &__item {
+        .box {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+* {
+    font-family: $poppinsFont;
+    font-weight: 400;
+    line-height: 1;
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+html {scroll-behavior: smooth;}
+a, a:hover, a:link, a:active, a:focus, a:visited {
+    text-decoration: none;
+    border-radius: none;
+    overflow: hidden;
+    color: inherit;
+}
+a:focus, a:active{outline: none;}
+a, button {cursor: pointer;}
+li {list-style: none;}
+
+.no-scroll {
+    overflow: hidden;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

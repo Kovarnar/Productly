@@ -1,0 +1,60 @@
+.main {
+    padding: 35px 0 50px;
+    .section {
+        &--double {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+                gap: 10px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    h2.title {
+        font-family: $montserratFont;
+        font-weight: 700;
+        font-size: rem(36px);
+        line-height: 1.23;
+        color: $titleColor;
+    }
+    h3.title {
+        font-family: $montserratFont;
+        font-weight: 700;
+        font-size: rem(28px);
+        line-height: 1.5;
+        color: $titleColor;
+    }
+    span.subtitle {
+        font-family: $montserratFont;
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: 1.5;
+        color: $textColor;
+    }
+    h4 {
+        font-family: $montserratFont;
+        color: $titleColor;
+    }
+    p, li {
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: 1.625;
+        color: $textColor;
+    }
+    .button {
+        margin: 0 auto;
+    }
+}

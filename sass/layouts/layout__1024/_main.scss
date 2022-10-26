@@ -1,0 +1,9 @@
+.main {
+    .section {
+        &--double {
+            .container {
+                gap: 100px;
+            }
+        }
+    }
+}

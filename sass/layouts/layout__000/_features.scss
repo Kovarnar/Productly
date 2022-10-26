@@ -1,0 +1,73 @@
+.features {
+    background: url('../img/bg.svg') bottom center no-repeat;
+    background-size: auto 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .title {
+            max-width: 500px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: $montserratFont;
+        }
+
+        .button {
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 40px;       /// 70px
+    }
+    &__item {
+        max-width: 270px;
+        .box {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            margin-bottom: 20px;    //30px
+            &--violet {
+                background-color: $purpleColor;
+            }
+            &--yellow {
+                background-color: $yellowColor;
+            }
+            &--red {
+                background-color: $redColor;
+            }
+            &--blue {
+                background-color: $blueColor;
+            }
+        }
+        .icon {
+            width: 18px;
+            height: 18px;
+            fill: $whithColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4 {
+            font-weight: 600;
+            font-size: rem(22px);
+            font-family: $montserratFont;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        p {
+            font-family: $montserratFont;
+        }
+    }
+}

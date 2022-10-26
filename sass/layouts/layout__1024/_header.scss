@@ -1,0 +1,33 @@
+.header {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    &__burger {
+        display: none;
+    }
+    &__wrapper {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    &__nav {
+        margin: 0;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__menu-item {
+        margin-bottom: 0px;
+        font-size: rem(16px);
+    }
+    &__buttons {
+        flex-direction: row;
+        :not(:last-child) {
+            margin: 0 32px 0 0;
+        }
+    }
+}

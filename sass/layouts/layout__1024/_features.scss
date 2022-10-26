@@ -1,0 +1,17 @@
+.features {
+    .container {
+        .title {
+            margin-bottom: 50px;
+        }
+
+        .button {
+            margin-bottom: 74px;
+        }
+    }
+    &__list {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 1fr;
+        gap: 40px;
+        justify-content: center;
+    }
+}

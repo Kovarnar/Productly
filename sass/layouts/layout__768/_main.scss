@@ -1,0 +1,22 @@
+.main {
+    padding: 70px 0 100px;
+    .title {
+        text-align: left;
+    }
+    .section {
+        &--double {
+            .container {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 100px;
+        }
+    }
+    .button {
+        margin: 0;
+    }
+}

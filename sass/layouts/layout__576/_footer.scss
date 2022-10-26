@@ -1,0 +1,27 @@
+.footer {
+    padding: 45px 0;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 40px 20px;
+        justify-content: space-around;
+    }
+    h4 {
+        margin-bottom: 20px;
+    }
+    &__menu {
+        order: -1;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__form {
+        input {
+            margin-bottom: 20px;
+            width: 250px;
+        }
+    }
+}
